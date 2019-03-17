@@ -5,7 +5,7 @@ import x from '../assets/x.svg';
 import { P1, P2 } from '../gamesLogic/constants';
 
 export default props => {
-	let src;
+	let src = '';
 	const { value, onCellClicked } = props;
 
 	if (value === P1) {

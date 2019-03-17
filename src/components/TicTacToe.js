@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from 'react';
 
 import { withGame } from '../HOC/withGame';
-import { gameLogic } from '../gamesLogic/TicTacToe';
+import { gameLogic } from '../gamesLogic/ticTacToe';
 import TicTacToeCell from './TicTacToeCell';
 import { EMPTY } from '../gamesLogic/constants';
 
