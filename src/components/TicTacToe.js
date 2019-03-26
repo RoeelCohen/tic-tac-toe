@@ -61,7 +61,9 @@ class TicTacToe extends Component {
 				</div>
 				{gameOver && <div className="game-ended">Game Over</div>}
 				{playerWon && <div className="game-ended">{`Player ${playerWon} win`}</div>}
-				<div className="board">{this.renderCells()}</div>
+				<div className="board" style={boardStyle}>
+					{this.renderCells()}
+				</div>
 				{(gameOver || playerWon) && (
 					<div
 						className="restart-game"
