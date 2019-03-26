@@ -1,9 +1,10 @@
 import { PLAYER_PLAYED, GAME_WON, GAME_OVER, RESTART_GAME } from '../actions/types';
 import { createNewBoard } from '../gamesLogic/gameUtils';
 import { P1, P2 } from '../gamesLogic/constants';
+import { BOARD_SIZE } from '../gamesLogic/ticTacToe';
 
 const initalState = () => ({
-	board: createNewBoard(3),
+	board: createNewBoard(BOARD_SIZE),
 	lastMove: { playerTurn: 0, x: -1, y: -1 },
 	score: { p1: 0, p2: 0 },
 	currentPlayerTurn: 1,
