@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from 'react';
 
 import { withGame } from '../HOC/withGame';
-import { gameLogic } from '../gamesLogic/ticTacToe';
+import { gameLogic, BOARD_SIZE } from '../gamesLogic/ticTacToe';
 import TicTacToeCell from './TicTacToeCell';
 import { EMPTY } from '../gamesLogic/constants';
 
@@ -51,6 +51,9 @@ class TicTacToe extends Component {
 	render() {
 		const { gameOver, playerWon, restartGame, score } = this.props;
 
+		const boardStyle = {
+			gridTemplateColumns: `repeat(${BOARD_SIZE}, 1fr)`
+		};
 		return (
 			<Fragment>
 				<div className="game-ended">

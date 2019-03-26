@@ -1,4 +1,4 @@
-export const BOARD_SIZE = 5;
+export const BOARD_SIZE = 7;
 
 const getBoardCenter = boardSize => {
 	return Math.floor(boardSize / 2);
